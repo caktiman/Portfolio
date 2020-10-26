@@ -1,0 +1,196 @@
+@font-face {
+  font-family: 'LEMON MILK';
+  src: url('LEMONMILK-Medium.eot');
+  src: url('LEMONMILK-Medium.eot?#iefix') format('embedded-opentype'),
+      url('LEMONMILK-Medium.woff2') format('woff2'),
+      url('LEMONMILK-Medium.woff') format('woff'),
+      url('LEMONMILK-Medium.ttf') format('truetype'),
+      url('LEMONMILK-Medium.svg#LEMONMILK-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: normal;
+}
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    color:white ;
+    font-family: 'LEMON MILK', sans-serif;
+}
+
+body{
+  background-color: black;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color:white;
+  text-align: center;
+  padding: 14px 5%;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: white;
+  color: black;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  height: auto; 
+  background: black;
+  display: grid;
+  padding: 50px 0;
+  grid-template-rows:1fr 1fr  ;
+  grid-template-columns:1fr 1fr  ;
+  grid-template-areas:
+  "aboutme contactme  "
+  "aboutme workIhavedone"
+  ;
+}
+
+.aboutme {
+  grid-area: aboutme;
+  background-image: url("space.jpg");
+  background-color: transparent;
+  display:flex;
+  height: 1000px;
+  background-size: cover; 
+  background-position: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactme {
+  grid-area: contactme;
+  background-image: url("light.jpg");
+  background-color: transparent;
+  display:flex;
+  height: 500px;
+  background-size: cover; 
+  background-position: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.workIhavedone {
+  grid-area: workIhavedone;
+  background-image: url("lens.jpg");
+  background-color: transparent;
+  display:flex;
+  height: 500px;
+  background-size: cover; 
+  background-position: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-item {
+  height: 600px;
+  width: 600px;
+  margin: 2em;
+  background: black;
+  transition: 0.2s;
+  /* check out the Hover Grow Effect pen */
+}
+
+.container-item img {
+  object-fit: cover;
+  /* Makes the image fit nicely as a cover */
+  width: 100%;
+  height: 75%;
+}
+
+
+/*This is for Application formatting*/
+.grid-container{
+  position: relative;
+  text-align: center;
+   
+
+  display: grid;
+  height: auto; 
+  /* height automatically to fit all elements */
+  background: black;
+  /* centers flexbox items */
+  padding: 50px 0;   
+  grid-template-rows:2.7fr 3fr  ;
+  grid-template-columns:1fr 1fr 1fr  ;
+  grid-template-areas:
+  "item1 item1 item1 "
+  "item2 item3 item4 "
+  
+  ;
+}
+
+
+
+.item1{
+  background-color:transparent; 
+  grid-area: item1;
+}
+
+
+.item2{
+  background-color:transparent;
+  grid-area: item2;
+}
+
+.item2 img{
+  object-fit: cover;
+  width: 100%;
+  height: 70%;
+}
+
+.item3{
+  background-color:transparent;
+  grid-area: item3;
+}
+
+.item3 img{
+  object-fit: cover;
+  width: 100%;
+  height: 70%;
+}
+
+.item4{
+  background-color:transparent;
+  grid-area: item4;
+}
+
+.item4 img{
+  object-fit: cover;
+  width: 100%;
+  height: 70%;
+}
+
+/* Centered text */
+.centered {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
