@@ -13,7 +13,6 @@
 
 
 *{
-
     margin: 0;
     padding: 0;
     color:white ;
@@ -56,7 +55,15 @@ body{
   color: black;
 }
 
-.container {
+.centertext{
+  background-color: black;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  text-align: center;
+}
+
+.Indexcontainer {
   position: relative;
   text-align: center;
   height: auto; 
@@ -73,10 +80,10 @@ body{
 
 .aboutme {
   grid-area: aboutme;
-  background-image: url("space.jpg");
+  background-image: url("aboutme.jpg");
   background-color: transparent;
   display:flex;
-  height: 1000px;
+  height: 1100px;
   background-size: cover; 
   background-position: center;
   flex-direction: column;
@@ -85,10 +92,10 @@ body{
 }
 .contactme {
   grid-area: contactme;
-  background-image: url("light.jpg");
+  background-image: url("contactme.jpg");
   background-color: transparent;
   display:flex;
-  height: 500px;
+  height: 550px;
   background-size: cover; 
   background-position: center;
   flex-direction: column;
@@ -98,10 +105,10 @@ body{
 }
 .workIhavedone {
   grid-area: workIhavedone;
-  background-image: url("lens.jpg");
+  background-image: url("work.jpg");
   background-color: transparent;
   display:flex;
-  height: 500px;
+  height: 550px;
   background-size: cover; 
   background-position: center;
   flex-direction: column;
