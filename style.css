@@ -33,6 +33,10 @@ body{
   overflow: hidden;
 }
 
+.h2{
+  text-decoration: none;
+}
+
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
@@ -66,14 +70,14 @@ body{
 .Indexcontainer {
   position: relative;
   text-align: center;
-  height: auto; 
+  height: 92vh; 
   background: black;
   display: grid;
-  padding: 50px 0;
+  
   grid-template-rows:1fr 1fr  ;
   grid-template-columns:1fr 1fr  ;
   grid-template-areas:
-  "aboutme contactme  "
+  "aboutme contactme"
   "aboutme workIhavedone"
   ;
 }
@@ -83,19 +87,18 @@ body{
   background-image: url("aboutme.jpg");
   background-color: transparent;
   display:flex;
-  height: 1100px;
   background-size: cover; 
   background-position: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .contactme {
   grid-area: contactme;
   background-image: url("contactme.jpg");
   background-color: transparent;
   display:flex;
-  height: 550px;
   background-size: cover; 
   background-position: center;
   flex-direction: column;
@@ -108,7 +111,6 @@ body{
   background-image: url("work.jpg");
   background-color: transparent;
   display:flex;
-  height: 550px;
   background-size: cover; 
   background-position: center;
   flex-direction: column;
