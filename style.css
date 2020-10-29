@@ -24,6 +24,15 @@ body{
   margin: auto;
 }
 
+  a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+} 
+
+/* .Indexcontainer a {
+  text-decoration: none;
+}     Not using this to remove link because I have other links*/ 
+
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -134,11 +143,45 @@ body{
   height: 75%;
 }
 
-
-/* Centered text */
-.centered {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.workcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
+
+.work{
+  background-color: transparent;
+  display:flex;
+  background-size: cover; 
+  background-position: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  height: 30vh;
+  width: 40%;
+  border: 3px solid white;
+}
+
+.work1{
+  background-image: url("work.jpg");
+}
+
+.work2{
+  background-image: url("astronaut.jpg");
+}
+
+.work3{
+  background-image: url("uxui.jpg");
+
+}
+
+.work4{
+  background-image: url("gamedesign.jpg");
+}
+
+img{
+  width:98vw;
+}
+
+
