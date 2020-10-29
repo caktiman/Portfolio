@@ -157,14 +157,14 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px 0px;
+  margin: 3vw 0px;
   height: 30vh;
   width: 40%;
   border: 3px solid white;
 }
 
 .work1{
-  background-image: url("work.jpg");
+  background-image: url("vantablack.jpg");
 }
 
 .work2{
@@ -180,8 +180,120 @@ body{
   background-image: url("gamedesign.jpg");
 }
 
-img{
-  width:98vw;
+.uxuicountainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
+.ux{
+  background-color: transparent;
+  display:flex;
+  background-size: cover; 
+  background-position: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3vh 1vw;
+  height: 50vh;
+  width: 90vh;
+
+}
+
+.ux1{
+  background-image: url("loading.png");
+}
+
+.ux2{
+  background-image: url("home.png");
+}
+
+.ux3{
+  background-image: url("classroom.png");
+}
+
+.ux4{
+  background-image: url("assignment.png");
+}
+
+.ux5{
+  background-image: url("grade.png");
+}
+
+.ux6{
+  background-image: url("grade overview.png");
+}
+
+.ux7{
+  background-image: url("grade specific.png");
+}
+
+.ux8{
+  background-image: url("connecting.png");
+}
+
+.ux9{
+  background-image: url("calender.png");
+}
+
+.ux10{
+  background-image: url("chat.png");
+}
+
+.ux11{
+  background-image: url("setting.png");
+}
+
+.ux12{
+  background-image: url("assign description.png");
+}
+
+.gamecountainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.game{
+background-color: transparent;
+display:flex;
+background-size: cover; 
+background-position: center;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 3vh 1vw;
+height: 55vh;
+width: 100vh;
+
+}
+
+.game1{
+background-image: url("Game\ Main\ Menu.png");
+}
+
+.game2{
+background-image: url("Game\ Select\ Level.png");
+}
+
+.game3{
+background-image: url("Game\ Setting.png");
+}
+
+.game4{
+background-image: url("Gameplay\ Design.png");
+}
+
+.game5{
+background-image: url("grade.png");
+}
+
+.game6{
+background-image: url("Game\ store.png");
+}
+
+
+
+
 
 
