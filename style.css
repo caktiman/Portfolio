@@ -46,6 +46,9 @@ body{
   text-decoration: none;
 }
 
+
+
+
 /* Style the links inside the navigation bar */
 .topnav a {
   display:flex;
@@ -55,6 +58,19 @@ body{
   padding: 14px 5%;
   text-decoration: none;
   font-size: 1rem;
+}
+
+@media only screen and (max-width:360px) {
+  .topnav a {
+    display:flex;
+    float: left;
+    color:white;
+    text-align: center;
+    padding: 14px 3%;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
 }
 
 /* Change the color of links on hover */
@@ -78,65 +94,6 @@ body{
 }
 
 
-@media only screen and (max-width:1000px) {
-
-  .Indexcontainer {
-    position: relative;
-    text-align: center;
-    height: 92vh; 
-    background: black;
-    display: grid;
-    
-    grid-template-rows:1fr;
-    grid-template-columns:1fr 1fr 1fr   ;
-    grid-template-areas:
-    "aboutme "
-    "contactme"
-    "workIhavedone"
-    ;
-  }
-
-  .aboutme {
-    grid-area: aboutme;
-    background-image: url("aboutme.jpg");
-    background-color: transparent;
-    display:flex;
-    background-size: cover; 
-    background-position: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .contactme {
-    grid-area: contactme;
-    background-image: url("contactme.jpg");
-    background-color: transparent;
-    display:flex;
-    background-size: cover; 
-    background-position: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
-  }
-  .workIhavedone {
-    grid-area: workIhavedone;
-    background-image: url("work.jpg");
-    background-color: transparent;
-    display:flex;
-    background-size: cover; 
-    background-position: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-}
-
-
-@media only screen and (min-width:1000px) {
-
   .Indexcontainer {
     position: relative;
     text-align: center;
@@ -152,6 +109,26 @@ body{
     ;
   }
 
+  @media only screen and (max-width:1000px) {
+
+    .Indexcontainer {
+      position: relative;
+      text-align: center;
+      height: 92vh; 
+      background: black;
+      display: grid;
+      
+      grid-template-rows:1fr 1fr 1fr;
+      grid-template-columns:1fr;
+      grid-template-areas:
+      "aboutme "
+      "contactme"
+      "workIhavedone"
+      ;
+    }
+  
+  }
+
   .aboutme {
     grid-area: aboutme;
     background-image: url("aboutme.jpg");
@@ -187,7 +164,7 @@ body{
     justify-content: center;
     align-items: center;
   }
-}
+
 
 
 
